@@ -1,0 +1,27 @@
+{
+  "name": "typingimport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --coverage --verbose",
+    "watch-test": "npm run test -- --watchAll",
+    "build-ts": "tsc --module commonjs",
+    "watch-ts": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"src/**/*.{js,ts}\" --quiet --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^6.1.8",
+    "@types/jest": "^25.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "jest-junit": "^10.0.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3",
+    "typescript-require": "^0.2.10"
+  }
+}
